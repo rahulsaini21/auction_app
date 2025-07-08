@@ -1,0 +1,25 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: auction-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: auction_db
+
+auth:
+  service:
+    base-url: http://localhost:8081
+
+app:
+  auction:
+    default-min-increment: 5.0 # 5% default minimum increment
+    bidding-interval: 5 # 5 minutes default bidding interval
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    com.auction.auction: DEBUG

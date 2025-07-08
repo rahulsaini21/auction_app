@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: auth-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: auction_auth_db
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+# app:
+#   jwt:
+#     secret: "VGhpcyBpcyBhIHNlY3JldCBrZXkgZm9yIEpXVCAzMiBjaGFyYWN0ZXJzIGxvbmc="
+#     expiration-in-ms: 86400000 # 24 hours
